@@ -11,15 +11,14 @@
     <string name="btn3">3</string>
     <string name="btn2">2</string>
     <string name="btn1">1</string>
-    <string name="btn0">0\n1\n2\n3\n4\n5\n6\n7\n8\n9</string>
     <string name="btn">0</string>
-    <string name="Cuadrado">cuadrado</string>
-    <string name="Hexágono">Hexagono</string>
-    <string name="Pentágono">Pentagono</string>
-    <string name="Círculo">Circulo</string>
-    <string name="Rectángulo">Rectangulo</string>
-    <string name="Tríangulo">Triangulo</string>
-    <string name="Alto">Ingrsse el alto de la figura</string>
-    <string name="Ancho">Ingrese la medida</string>
-    <string name="Resultado">"Resultado: "</string>
+    <string name="Cuadrado">Cuadrado</string>
+    <string name="Hexagono">Hexágono</string>
+    <string name="Pentagono">Pentágono</string>
+    <string name="Circulo">Círculo</string>
+    <string name="Rectangulo">Rectángulo</string>
+    <string name="Triangulo">Triángulo</string>
+    <string name="Ancho">Seleccione la figura</string>
+    <string name="Resultado">"Resultado:"</string>
+    <string name="Calculadora">Calculadora de Figuras Geométricas</string>
 </resources>

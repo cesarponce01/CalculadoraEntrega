@@ -4,4 +4,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="Nuevo">#90CAF9</color>
     <color name="foNDO">#4DB6AC</color>
+    <color name="ColorTitulo">#311B92</color>
+    <color name="ColorValor1">#004D40</color>
+    <color name="ColorValor2">#33691E</color>
 </resources>

@@ -18,12 +18,30 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="182dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/Calculadora"
+                    android:textColor="@color/ColorTitulo"
+                    android:textSize="16sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
 
             <androidx.gridlayout.widget.GridLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center"
                 app:columnCount="3"
                 app:useDefaultMargins="true">
 
@@ -41,35 +59,35 @@
                     android:id="@+id/btnRectangulo"
                     android:layout_width="108dp"
                     android:layout_height="100dp"
-                    android:contentDescription="@string/Rectángulo"
+                    android:contentDescription="@string/Rectangulo"
                     tools:src="@mipmap/rectangulo" />
 
                 <ImageButton
                     android:id="@+id/btnTriangulo"
                     android:layout_width="109dp"
                     android:layout_height="95dp"
-                    android:contentDescription="@string/Tríangulo"
+                    android:contentDescription="@string/Triangulo"
                     tools:src="@mipmap/triangulo" />
 
                 <ImageButton
                     android:id="@+id/btnCirculo"
                     android:layout_width="106dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/Círculo"
+                    android:contentDescription="@string/Circulo"
                     tools:src="@mipmap/circulo" />
 
                 <ImageButton
                     android:id="@+id/btnPentagono"
                     android:layout_width="109dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/Pentágono"
+                    android:contentDescription="@string/Pentagono"
                     tools:src="@mipmap/pentagono" />
 
                 <ImageButton
                     android:id="@+id/btnHexagono"
                     android:layout_width="109dp"
                     android:layout_height="wrap_content"
-                    android:contentDescription="@string/Hexágono"
+                    android:contentDescription="@string/Hexagono"
                     tools:src="@mipmap/hexagono" />
             </androidx.gridlayout.widget.GridLayout>
         </LinearLayout>
@@ -89,6 +107,7 @@
                 android:ems="10"
                 android:hint="@string/Ancho"
                 android:inputType="text"
+                android:textColor="@color/ColorValor1"
                 android:textStyle="bold" />
 
             <EditText
@@ -99,13 +118,14 @@
                 android:ems="10"
                 android:hint="@string/Ancho"
                 android:inputType="text"
+                android:textColor="@color/ColorValor2"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/txResultado"
-                android:layout_width="182dp"
+                android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:gravity="center|center_horizontal|left"
+                android:gravity="center"
                 android:hint="@string/Resultado"
                 android:textColor="@color/material_dynamic_primary10"
                 android:textColorHint="@color/black"

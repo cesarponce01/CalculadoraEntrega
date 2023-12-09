@@ -5,9 +5,15 @@ import android.widget.TextView
 
 class Figura {
 
-    var alto : Int
+    var alto : Int=0
     var ancho : Int=0
     var resultado : Int
+
+    constructor(){
+        this.alto = alto
+        this.ancho = ancho
+        this.resultado = 0
+    }
 
     constructor(alto: Int, ancho: Int) {
         this.alto = alto
@@ -18,13 +24,6 @@ class Figura {
     constructor(alto: Int) {
         this.alto = alto
         this.resultado = 0
-    }
-    fun onCalcular(view: View){
-
-    }
-
-    fun onBorrar(){
-
     }
 
 
