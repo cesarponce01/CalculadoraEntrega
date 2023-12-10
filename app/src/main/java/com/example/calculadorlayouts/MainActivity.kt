@@ -143,12 +143,33 @@ class MainActivity : AppCompatActivity() {
         }
 
         txAlto = findViewById(R.id.txAlto)
-        txAlto.setOnClickListener { ocultarTeclado() }
-
         txAncho = findViewById(R.id.txAncho)
-        txAncho.setOnClickListener { ocultarTeclado() }
-
         txResultado = findViewById(R.id.txResultado)
+
+        //Cuando reciba el focus se oculte el teclado para el txAlto
+        txAlto.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                ocultarTeclado()
+            }
+        }
+
+        //Cuando se de click se oculte el teclado para txAlto
+        txAlto.setOnClickListener {
+            ocultarTeclado()
+        }
+
+        //Cuando reciba el focus se oculte el teclado para el txAncho
+        txAncho.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                ocultarTeclado()
+            }
+        }
+
+        //Cuando se de click se oculte el teclado para txAncho
+        txAncho.setOnClickListener {
+            ocultarTeclado()
+        }
+
     }
 
 
@@ -172,14 +193,12 @@ class MainActivity : AppCompatActivity() {
         // Verifica qué EditText está activo y agrega el número correspondiente
         when {
             txAlto.isFocused -> {
-                ocultarTeclado()
                 val textoActual = txAlto.text.toString()
                 txAlto.setText(textoActual + numero)
 
             }
 
             txAncho.isFocused -> {
-                ocultarTeclado()
                 val textoActual = txAncho.text.toString()
                 txAncho.setText(textoActual + numero)
             }
@@ -196,7 +215,6 @@ class MainActivity : AppCompatActivity() {
         //Borramos los valores que estén anteriormente
         onBorrar()
 
-        //habilitarEditText(false, false)
         figuraSeleccionada = tipoFigura
         txAlto.hint = hintAlto
         txAncho.hint = hintAncho

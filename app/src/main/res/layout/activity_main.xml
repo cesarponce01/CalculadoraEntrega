@@ -90,48 +90,48 @@
                     android:contentDescription="@string/Hexagono"
                     tools:src="@mipmap/hexagono" />
             </androidx.gridlayout.widget.GridLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".5"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <EditText
-                android:id="@+id/txAlto"
-                android:layout_width="182dp"
-                android:layout_height="48dp"
-                android:layout_marginBottom="5dp"
-                android:ems="10"
-                android:hint="@string/Ancho"
-                android:inputType="text"
-                android:textColor="@color/ColorValor1"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/txAncho"
-                android:layout_width="182dp"
-                android:layout_height="48dp"
-                android:layout_marginBottom="5dp"
-                android:ems="10"
-                android:hint="@string/Ancho"
-                android:inputType="text"
-                android:textColor="@color/ColorValor2"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/txResultado"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="48dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
                 android:gravity="center"
-                android:hint="@string/Resultado"
-                android:textColor="@color/material_dynamic_primary10"
-                android:textColorHint="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:orientation="vertical">
 
+                <EditText
+                    android:id="@+id/txAlto"
+                    android:layout_width="182dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="5dp"
+                    android:ems="10"
+                    android:hint="@string/Ancho"
+                    android:inputType="text"
+                    android:textColor="@color/ColorValor1"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txAncho"
+                    android:layout_width="182dp"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="5dp"
+                    android:ems="10"
+                    android:hint="@string/Ancho"
+                    android:inputType="text"
+                    android:textColor="@color/ColorValor2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txResultado"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:hint="@string/Resultado"
+                    android:textColor="@color/material_dynamic_primary10"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -224,7 +224,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:gravity="center"
             android:orientation="horizontal">
 
