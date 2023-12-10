@@ -53,7 +53,8 @@ class MainActivity : AppCompatActivity() {
         btnPentagono = findViewById(R.id.btnPentagono)
         btnHexagono = findViewById(R.id.btnHexagono)
 
-        // Asigna las imágenes a los ImageButton
+        // Asigna las imágenes a los ImageButton ya que por motivo de la imagen si la agrego desde los atributos
+        //No me las asigna directamente.
         btnCuadrado.setImageResource(R.mipmap.cuadrado)
         btnRectangulo.setImageResource(R.mipmap.rectangulo)
         btnTriangulo.setImageResource(R.mipmap.triangulo)
@@ -73,14 +74,15 @@ class MainActivity : AppCompatActivity() {
         btn8 = findViewById(R.id.btn8)
         btn9 = findViewById(R.id.btn9)
 
+        //Se asigna el button de Borrar
         val btnBorrar: Button = findViewById(R.id.btnBorrar)
         btnBorrar.setOnClickListener { onBorrar() }
 
-        //Se crea un array con los botones creados
+        //Se crea un array con los valores númericos ya creados con anterioridad
         val botonesNumeros = arrayOf(btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9)
 
         // Cuando el usuario selecciona una figura cambiamos el hint en función de la figura y así
-        //orientamos al usuario que exactamente se le pide.
+        //orientamos al usuario para que ingrese el valor según figura.
 
         btnCuadrado.setOnClickListener {
             configurarFigura(
@@ -177,17 +179,17 @@ class MainActivity : AppCompatActivity() {
         txAlto.isEnabled = alto
         txAncho.isEnabled = ancho
 
+        txAlto.visibility = View.VISIBLE
         //Si ambos son true los 2 editText son visibles
         if (alto && ancho) {
-            txAlto.visibility = View.VISIBLE
             txAncho.visibility = View.VISIBLE
         } else {
             //Caso contrario se esconde la visibilidad del txAncho
-            txAlto.visibility = View.VISIBLE
             txAncho.visibility = View.INVISIBLE
         }
     }
 
+    //Función que permite agregar un número al editTex de txAlto o al txAncho.
     private fun agregarNumero(numero: String) {
 
         // Verifica qué EditText está activo y agrega el número correspondiente
@@ -205,6 +207,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    //Función que permite crear la figura
     private fun configurarFigura(
         tipoFigura: TipoFigura,
         hintAlto: String,
