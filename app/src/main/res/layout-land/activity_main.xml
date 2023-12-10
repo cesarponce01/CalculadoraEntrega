@@ -9,7 +9,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical">
 
         <TextView
@@ -26,34 +27,33 @@
             android:id="@+id/col"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight=".7"
+            android:layout_gravity="center"
             app:columnCount="2">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="365dp"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="365dp"
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="vertical">
 
                     <androidx.gridlayout.widget.GridLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
                         android:layout_gravity="center"
-                        android:layout_weight="7"
+                        android:layout_weight=".50"
                         app:columnCount="3"
-                        app:useDefaultMargins="true">
+                        app:useDefaultMargins="false">
 
                         <ImageButton
                             android:id="@+id/btnCuadrado"
-                            android:layout_width="101dp"
-                            android:layout_height="96dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:contentDescription="@string/Cuadrado"
                             android:visibility="visible"
                             app:layout_column="0"
@@ -62,44 +62,44 @@
 
                         <ImageButton
                             android:id="@+id/btnRectangulo"
-                            android:layout_width="108dp"
-                            android:layout_height="100dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:contentDescription="@string/Rectangulo"
                             tools:src="@mipmap/rectangulo" />
 
                         <ImageButton
                             android:id="@+id/btnTriangulo"
-                            android:layout_width="109dp"
-                            android:layout_height="95dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:contentDescription="@string/Triangulo"
                             tools:src="@mipmap/triangulo" />
 
                         <ImageButton
                             android:id="@+id/btnCirculo"
-                            android:layout_width="106dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="75dp"
                             android:contentDescription="@string/Circulo"
                             tools:src="@mipmap/circulo" />
 
                         <ImageButton
                             android:id="@+id/btnPentagono"
-                            android:layout_width="109dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="74dp"
                             android:contentDescription="@string/Pentagono"
                             tools:src="@mipmap/pentagono" />
 
                         <ImageButton
                             android:id="@+id/btnHexagono"
-                            android:layout_width="109dp"
-                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="75dp"
                             android:contentDescription="@string/Hexagono"
                             tools:src="@mipmap/hexagono" />
                     </androidx.gridlayout.widget.GridLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight=".7"
+                        android:layout_height="0dp"
+                        android:layout_weight=".50"
                         android:gravity="center"
                         android:orientation="vertical">
 
@@ -141,21 +141,20 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="382dp"
+                android:layout_width="365dp"
                 android:layout_height="match_parent"
+                android:gravity="center"
                 android:orientation="vertical"
                 android:visibility="visible">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3.8"
-                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <androidx.gridlayout.widget.GridLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:textAlignment="center"
                         app:columnCount="3">
 
@@ -235,8 +234,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_height="match_parent"
                     android:gravity="center"
                     android:orientation="horizontal">
 
